@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hearn & Hearn Consulting | Construction Consultancy in the Philippines</title>
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
+  <!-- Base Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '.projects_carousel',
+      children: 'a',
+      pswpModule: () => import('https://unpkg.com/photoswipe'),
+    });
+    lightbox.init();
+  </script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <div class="left">
+        <a href="/">
+          <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
+        </a>
+      </div>
+      <div class="right">
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/services.html" class="selected">Services</a>
+          <a href="/projects.html">Projects</a>
+          <a href="/careers.html">Careers</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="block">
+    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Build for Future Image">
+    <div class="container">
+      <div class="text">
+        <h6>Bespoke, tailor-made services that deliver results</h6>
+        <h2>Services</h2>
+        <p>At Hearn & Hearn Consulting, we excel in Commercial Management, prioritizing strict budgeting and vigilant monitoring to safeguard our clients' funds. Our Project Management is innovative, breaking away from traditional approaches. For Green Building certification, we offer a unique and efficient solution addressing key sustainability concerns in the Philippines. Plus, our certified directors provide expert Contract Advisory services.</p>
+        <a href="/about.html" class="blue_button">About us</a>
+        <a href="/contact.html" class="gold_button">Contact us</a>
+      </div>
+      <div class="logo">
+        <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo">
+      </div>
+    </div>
+  </section>
+
+  <section id="dna" class="services">
+    <div class="container">
+      <div class="img">
+        <img src="commercial_management.png" alt="" />
+      </div>
+      <div class="text">
+        <h6>Cashflow is the bloodline of the project</h6>
+        <h2>COMMERCIAL MANAGEMENT</h2>
+        <p>With a strong reputation for protecting our Clients’ money through strict budgeting and monitoring, we have supported the successful delivery of the largest development projects in the Philippines.</p>
+        <div class="button_container">
+          <a href="/commercial_management.html" class="blue_button">Learn More</a>
+          <a href="/contact.html" class="gold_button">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dna" class="services reverse">
+    <div class="container">
+      <div class="text">
+        <h6>Turning Vision into Reality</h6>
+        <h2>PROJECT MANAGEMENT</h2>
+        <p>Going beyond the traditional approach to construction and procurement, we use experience and expertise to carefully guide our clients through the process of design, tendering, construction and close out.</p>
+        <div class="button_container">
+          <a href="/project_management.html" class="blue_button">Learn More</a>
+          <a href="/" class="gold_button">Contact us</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="project_management.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section id="dna" class="services">
+    <img src="https://images.unsplash.com/photo-1535689077097-a8726b5ff822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="">
+    <div class="container">
+      <div class="img">
+        <img src="leed_certifications.png" alt="" />
+      </div>
+      <div class="text" style="color: white">
+        <h6>Redefining Green Building Certification in the Philippines</h6>
+        <h2>GREEN BUILDING</h2>
+        <p>A unique and efficient take on green Building certification which addresses key sustainable concerns in the Philippines while harnessing benefits of the most prominent green building certifications.</p>
+        <div class="button_container">
+          <a href="/green_building.html" class="blue_button">Learn More</a>
+          <a href="/" class="gold_button">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dna" class="services reverse" style="background-color: white">
+    <div class="container">
+      <div class="text">
+        <h6>Your Trusted Experts in Dispute Resolution</h6>
+        <h2>CONTRACT ADVISORY</h2>
+        <p>Certified by the world's leading professional body for disputes, our Directors are considered leading experts in the Philippines. With local experience and a successful track record, we provide support to Clients at any level a dispute may arise.</p>
+        <div class="button_container">
+          <a href="/contract_advisory.html" class="blue_button">Learn More</a>
+          <a href="/" class="gold_button">Contact us</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="contract_advisory.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="bottom_left">
+        <a href="/">
+          <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo">
+        </a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/company/hearn-hearn-consulting/">
+            <img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/48a2a42b19814efaa824450f23e8a253.png" alt="">
+          </a>
+          <a href="https://www.facebook.com/hhconsultingph/">
+            <img src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e316f544f9094143b9eac01f1f19e697.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/hhconsultingph">
+            <img src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8d6893330740455c96d218258a458aa4.png" alt="">
+          </a>
+        </div>
+        <p>© 2023 by HH Consulting Inc.</p>
+      </div>
+      <div class="top_left">
+        <h6>GET IN TOUCH</h6>
+        <p>4th Floor, Kings' Court 1, <br>2129 Chino Roces Avenue, <br>Makati City, 1230, <br>Philippines.</p>
+
+        <a href="tel:+639156704357">+63 915 670 4357</a>
+        <a href="mailto:theteam@hhconsulting.com.ph">theteam@hhconsulting.com.ph</a>
+      </div>
+      <div class="top_right">
+        <div class="links">
+          <h6>LINKS</h6>
+          <a href="/"><li>HOME</li></a>
+          <a href="/about"><li>ABOUT</li></a>
+          <a href="/services"><li>SERVICES</li></a>
+          <a href="/projects"><li>PROJECTS</li></a>
+          <a href="/careers"><li>CAREERS</li></a>
+          <a href="/contact"><li>CONTACT</li></a>
+        </div>
+      </div>
+      <div class="bottom_right">
+        <img src="https://static.wixstatic.com/media/7e3536_b54e9d63c2d846b0ad3b86dfda59a10b~mv2.jpg/v1/fill/w_188,h_95,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9000024531%20Black%26White%20without%20QR%20Code.jpg" alt="">
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+<script src="demo.js"></script>
+<!-- Base JavaScript -->
+<script src="script.js"></script>
+</html>
