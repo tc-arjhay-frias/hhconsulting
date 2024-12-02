@@ -8,7 +8,7 @@
   <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
@@ -32,43 +32,70 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
-      <div class="left">
-        <a href="/">
-          <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
-        </a>
-      </div>
-      <div class="right">
-        <div class="menu">
-          <a href="/" class="selected">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/services.html">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
+      <div class="top">
+        <div class="left">
+          <a href="">
+            <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
+          </a>
         </div>
+        <div class="right">
+          <a href="/services.html" class="blue_button">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="/about">About us</a>
+        <a href="/services">Our Services</a>
+        <a href="/projects">Our Projects</a>
+        <a href="/careers">Careers</a>
+        <a href="/blogs">Blogs</a>
       </div>
     </div>
   </nav>
 
-  <section class="hero" id="hero">
-    <canvas id="demo-canvas"></canvas>
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Build for Future Image">
-    <div class="container">
-      <div class="text">
-        <h6>Construction & Consulting Services</h6>
-        <h2>BUILD FOR THE FUTURE</h2>
-        <p>We help investors, developers, contractors and tenants deliver successful construction projects by challenging the status quo.</p>
-        <a href="/services.html" class="blue_button">Learn More</a>
-        <a href="/contact_us.html" class="gold_button">Contact us</a>
+  <section id="hero">
+    <div class="hero_carousel">
+      <div class="item">
+        <div class="text_container">
+          <div class="text">
+            <h2>Protecting our client's money through strict budgeting and monitoring.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>
+        </div>
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)" alt=""></div>
       </div>
-      <div class="video">
-        <a href="#" class="play_video" id="hero_video">
-          <img src="https://clipart-library.com/images_k/white-play-button-transparent/white-play-button-transparent-21.png" alt="Play Button">
-        </a>
+      <div class="item">
+        <div class="text_container">
+          <div class="text">
+            <h2>Going beyond the traditional approach to construction & procurement.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>  
+        </div>
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)" alt=""></div>
+      </div>
+      <div class="item">
+        <div class="text_container">
+          <div class="text">
+            <h2>A unique and efficient take on green Building certification which addresses key sustainable concerns in the Philippines.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>
+        </div>
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)" alt=""></div>
+      </div>
+      <div class="item">
+        <div class="text_container">
+          <div class="text">
+            <h2>Our directors are certified by the world's leading professional body for disputes.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>  
+        </div>
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)" alt=""></div>
       </div>
     </div>
   </section>
-
+  
   <section id="clients">
     <h2>With over 40 years of Experience</h2>
     <p>Trusted by Thousands of our Clients</p>
@@ -272,9 +299,6 @@
     </div>
   </footer>
 </body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-<script src="demo.js"></script>
 <!-- Base JavaScript -->
 <script src="script.js"></script>
 </html>

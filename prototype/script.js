@@ -20,6 +20,17 @@
       arrows: false,
     });
 
+    $('.hero_carousel').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1600,
+      speed: 1600,
+      arrows: false,
+      fade: true,
+    });
+
     $(document).on("click", '[data-toggle="lightbox"]', function(event) {
       event.preventDefault();
       $(this).ekkoLightbox();

@@ -38,23 +38,57 @@
   </nav>
   
   <section id="hero">
-    <div class="bg"></div>
-    <div class="text">
-      <h1>Build for the future</h1>
-      <p>We help investors, developers, contractors and tenants deliver successful construction projects by challenging the status quo.</p>
-      <div class="buttons">
-        <a href="/services.html" class="blue_button">Learn More</a>
-        <a href="/contact_us.html" class="gold_button">Contact us</a>
+    <div class="hero_carousel">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        <div class="text_container">
+          <div class="text">
+            <h2>Protecting our client's money through strict budgeting and monitoring.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>
+        </div>
       </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+        <div class="text_container">
+          <div class="text">
+            <h2>Going beyond the traditional approach to construction & procurement.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+          </div>  
+        </div>
+      </div>
+      <!-- <div class="item">
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"></div>
+        <div class="container">
+          <div class="text">
+            <h2>A unique and efficient take on green Building certification which addresses key sustainable concerns in the Philippines.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+            <div class="buttons">
+              <a href="/contact_us.html" class="gold_button">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="bg" style="background: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)"></div>
+        <div class="container">
+          <div class="text">
+            <h2>Our directors are certified by the world's leading professional body for disputes.</h2>
+            <a href="/services.html" class="blue_button">Learn More</a>
+            <div class="buttons">
+              <a href="/contact_us.html" class="gold_button">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </section>
 
   <section id="clients">
     <div class="container">
-
       <h2>With over 40 years of Experience</h2>
       <p>Trusted by Thousands of our Clients</p>
-      <div class="carousel">
+      <div class="clients_carousel">
         <div class="item">
           <img src="https://static.wixstatic.com/media/7e3536_2305de5dbe07452183446b2ddbcb1cd1~mv2.jpg/v1/fill/w_209,h_140,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/World%20Bank%20Group.jpg" alt="World Bank Group">
         </div>
@@ -99,36 +133,41 @@
   </section>
 
   <script>
-    (() => {
-      $(document).ready(() => {
-        $('.carousel').slick({
-          infinite: true,
-          slidesToShow: 8,
-          slidesToScroll: 5,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          speed: 1600,
-          arrows: false,
-        });
-
-        // $('.services_carousel').slick({
-        //   infinite: true,
-        //   slidesToShow: 4,
-        //   slidesToScroll: 1,
-        //   autoplay: true,
-        //   autoplaySpeed: 5000,
-        //   speed: 1600,
-        //   arrows: false,
-        // });
-
-        $(document).on("click", '[data-toggle="lightbox"]', function(event) {
-          event.preventDefault();
-          $(this).ekkoLightbox();
-        });
-
-        $
+    $(document).ready(() => {
+      $('.hero_carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1600,
+        speed: 1600,
+        arrows: false,
       });
-    })();
+      $('.clients_carousel').slick({
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 5,
+        autoplay: true,
+        autoplaySpeed: 1600,
+        speed: 1600,
+        arrows: false,
+      });
+
+      // $('.services_carousel').slick({
+      //   infinite: true,
+      //   slidesToShow: 4,
+      //   slidesToScroll: 1,
+      //   autoplay: true,
+      //   autoplaySpeed: 5000,
+      //   speed: 1600,
+      //   arrows: false,
+      // });
+
+      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    });
   </script>
 </body>
 </html>
