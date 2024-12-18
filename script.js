@@ -30,5 +30,26 @@
       arrows: false,
       fade: true,
     });
+
+    $('.links a[data-id="services"]').hover(() => {
+      $("#mega_nav > div").css("display", "none");
+      $("#mega_nav .nav_services").css("display", "flex");
+      $("#mega_nav").show();
+    });
+    $('.links a[data-id="projects"]').hover(() => {
+      $("#mega_nav > div").css("display", "none");
+      $("#mega_nav .nav_projects").css("display", "flex");
+      $("#mega_nav").show();
+    });
+
+    $("#mega_nav").mouseenter(() => {
+      $("#mega_nav").show();
+    })
+
+    $("#mega_nav").mouseleave(() => {
+      $("#mega_nav").hide();
+
+    });
+
   });
 })();
