@@ -11,22 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
   <!-- Base Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.projects_carousel',
-      children: 'a',
-      pswpModule: () => import('https://unpkg.com/photoswipe'),
-    });
-    lightbox.init();
-  </script>
+
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -48,7 +39,7 @@
         <a href="/">Home</a>
         <a href="/about">About us</a>
         <a href="/services">Our Services</a>
-        <a href="/projects">Our Projects</a>
+        <a href="/projects.html">Our Projects</a>
         <a href="/careers">Careers</a>
         <a href="/blogs">Blogs</a>
       </div>
@@ -144,8 +135,10 @@
 
 
   <section id="services">
-    <h2>Our Services</h2>
-    <p>Bespoke, tailor-made services that deliver results</p>
+    <div class="heading_column">
+      <h2>Our Services</h2>
+      <a href="#" class="blue_button">More Services</a>
+    </div>
     <div class="services_carousel">
       <div class="item">
         <img src="https://static.wixstatic.com/media/7e3536_cd00098dff4a4cf3a0a493172b7c5f7e~mv2.png/v1/fill/w_258,h_258,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_Services.png" alt="">
@@ -180,44 +173,61 @@
 
 
   <section id="projects">
-    <h2>Our Projects</h2>
+    <div class="heading_column">
+      <h2>Our Projects</h2>
+      <a href="#" class="blue_button">More Projects</a>
+    </div>
     <div class="projects_carousel">
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1583248483203-555f3d850303?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80">
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1583248483203-555f3d850303?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
         </div>
       </a>
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1621511075938-f03482369feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1621511075938-f03482369feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
         </div>
       </a>
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80">
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
         </div>
       </a>
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80">
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
         </div>
       </a>
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80">
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
         </div>
       </a>
-      <a class="item" data-pswp-width="1920" data-pswp-height="1920" target="_blank" href="https://images.unsplash.com/photo-1621511075938-f03482369feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+      <a class="item">
+        <img src="https://images.unsplash.com/photo-1621511075938-f03482369feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+        <div class="text">
+          <h3>Project Title</h3><br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
+        </div>
+      </a>
+      <a class="item">
+        <img src="https://images.unsplash.com/photo-1558464678-2f1570e8d60e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80" alt="">
+        <div class="text">
+          <h3>Project Title</h3><br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, dolores?</p>
+        </div>
+      </a>
+      <a class="item">
         <img src="https://images.unsplash.com/photo-1621511075938-f03482369feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
         <div class="text">
           <h3>Project Title</h3><br />
@@ -226,6 +236,52 @@
       </a>
     </div>
   </section>
+
+  <div id="blogs">
+    <div class="heading_column">
+      <h2>Blogs</h2>
+      <a href="" class="blue_button">More Insights</a>
+    </div>
+    <div class="blogs_container">
+      <div class="item">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFq2f6KwtrOQQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1729491492360?e=1740009600&v=beta&t=jvdnGUvxzryDyqPA4_kEYNSaQ4KbnhiPfxtxOqT9Yb0" alt="">
+        <div class="text">
+          <p class="date">On October 19, 2024</p>
+          <h6>Hearn & Hearn Consulting proudly participated as a Gold Sponsor at the QS Summit Manila 2024</h6>
+          <p>With the theme "The Evolving Role of Quantity Surveyors in Shaping a Smart and Greener Future," the summit underscored the crucial...</p>
+          <a href="" class="gold_button">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFq2f6KwtrOQQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1729491492360?e=1740009600&v=beta&t=jvdnGUvxzryDyqPA4_kEYNSaQ4KbnhiPfxtxOqT9Yb0" alt="">
+        <div class="text">
+          <p class="date">On October 19, 2024</p>
+          <h6>Hearn & Hearn Consulting proudly participated as a Gold Sponsor at the QS Summit Manila 2024</h6>
+          <p>With the theme "The Evolving Role of Quantity Surveyors in Shaping a Smart and Greener Future," the summit underscored the crucial...</p>
+          <a href="" class="gold_button">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFq2f6KwtrOQQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1729491492360?e=1740009600&v=beta&t=jvdnGUvxzryDyqPA4_kEYNSaQ4KbnhiPfxtxOqT9Yb0" alt="">
+        <div class="text">
+          <p class="date">On October 19, 2024</p>
+          <h6>Hearn & Hearn Consulting proudly participated as a Gold Sponsor at the QS Summit Manila 2024</h6>
+          <p>With the theme "The Evolving Role of Quantity Surveyors in Shaping a Smart and Greener Future," the summit underscored the crucial...</p>
+          <a href="" class="gold_button">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFq2f6KwtrOQQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1729491492360?e=1740009600&v=beta&t=jvdnGUvxzryDyqPA4_kEYNSaQ4KbnhiPfxtxOqT9Yb0" alt="">
+        <div class="text">
+          <p class="date">On October 19, 2024</p>
+          <h6>Hearn & Hearn Consulting proudly participated as a Gold Sponsor at the QS Summit Manila 2024</h6>
+          <p>With the theme "The Evolving Role of Quantity Surveyors in Shaping a Smart and Greener Future," the summit underscored the crucial...</p>
+          <a href="" class="gold_button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <section id="dna">
     <img src="https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="">
@@ -248,7 +304,7 @@
         </div>
       </div>
       <div class="text">
-        <h6>We Build For The Future</h6>
+        <!-- <h6>We Build For The Future</h6> -->
         <h2>OUR D.N.A.</h2>
         <p>Hearn & Hearn Consulting is a dynamic, multidisciplinary construction consultancy practice cultivated through history and experience, driven by collaboration, innovation, and the delivery of results for our clients.</p>
         <a href="/about.html" class="gold_button">Learn More</a>
@@ -287,10 +343,9 @@
           <h6>LINKS</h6>
           <a href="/"><li>HOME</li></a>
           <a href="/about.html"><li>ABOUT</li></a>
-          <a href="/services.html"><li>SERVICES</li></a>
-          <a href="/projects.html"><li>PROJECTS</li></a>
-          <a href="/careers.html"><li>CAREERS</li></a>
-          <a href="/contact.html"><li>CONTACT</li></a>
+          <a href="/services.html"><li>OUR SERVICES</li></a>
+          <a href="/projects.html"><li>OUR PROJECTS</li></a>
+          <a href="/insights.html"><li>INSIGHTS</li></a>
         </div>
       </div>
       <div class="bottom_right">

@@ -217,34 +217,29 @@ nav {
   position: relative;
   padding: 40px 0px;
 }
-  #projects > h2 {
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--color-blue);
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--color-gold);
-  }
+
   #projects > .projects_carousel {
     max-width: 1400px;
     margin: auto;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
   #projects > .projects_carousel .item {
-    margin: 5px;
     position: relative;
-    /* width: 30%; */
-    /* aspect-ratio: 1/1; */
+    width: 24%;
+    aspect-ratio: 1/1;
+    display: block;
   }
     .projects_carousel .item > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       max-height: 400px;
+      display: block;
       /* border-radius: 10px; */
     }
     .projects_carousel .item:hover > img {
@@ -259,7 +254,7 @@ nav {
       color: white;
       background-color: var(--color-blue);
       padding: 20px;
-      width: 50%;
+      width: 60%;
       height: 60%;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -277,11 +272,11 @@ nav {
       z-index: 9999999999999999!important;
     }
     .projects_carousel .item > .text h3 {
-      font-size: 21px;
+      font-size: 16px;
     }
     .projects_carousel .item > .text p {
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
     }
 
 /* Services */
@@ -289,20 +284,6 @@ nav {
   padding: 40px 0px;
   background-color: #f7f7f7;
 }
-  #services > h2 {
-    text-align: center;
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--color-blue);
-    text-decoration: underline;
-    text-decoration-color: var(--color-gold);
-  }
-  #services > p {
-    text-align: center;
-    font-size: 16px;
-    color: var(--color-blue);
-    margin-bottom: 20px;
-  }
   #services > .services_carousel {
     margin: 20px auto;
     max-width: 1400px;
@@ -376,8 +357,7 @@ footer {
           footer > .container > .bottom_left > .socials > a {
             text-decoration: none;
           }
-
-
+          
       footer > .container > .top_left > h6 {
         font-size: 16px;
         color: var(--color-blue);
@@ -417,10 +397,73 @@ footer {
         color: var(--color-gold);
       }
 
+
+.heading_column {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+  .heading_column h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--color-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold);
+    margin-bottom: 20px;
+  }
+  .heading_column a {
+    display: block;
+    height: fit-content;
+  }
+
+#blogs {
+  background-color: #f7f7f7;
+  padding: 30px 0px 50px 0px;
+}
+.blogs_container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 20px;
+}
+  .blogs_container .item {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+    .blogs_container .item img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .blogs_container .item .date {
+      font-weight: bold;
+      font-size: 13px;
+      text-decoration: underline; 
+      margin-bottom: 10px;
+    }
+      .blogs_container .item h6 {
+        font-weight: bold;
+        font-size: 16px; 
+        margin-bottom: 10px;
+      }
+      .blogs_container .item p {
+        font-size: 14px; 
+        margin-bottom: 10px;
+      }
+
       
 #dna {
   height: 400px;
-  margin-top: 40px;
   position: relative;
 }
   #dna > img {
@@ -448,6 +491,9 @@ footer {
       flex-direction: column;
       align-items: end;
       text-align: right;
+    }
+    #dna > .container > .text p {
+      margin-bottom: 10px;
     }
     #dna > .container > .text > .button_container > a {
       display: inline-block;
