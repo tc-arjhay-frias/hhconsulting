@@ -145,6 +145,10 @@ nav {
     flex-direction: column;
     gap: 10px;
   }
+  #mega_nav > div div:not(:first-child) {
+    padding-left: 40px;
+    border-left: 1px solid white;
+  }
   #mega_nav > div.nav_projects div {
     width: 25%;
     display: flex;
