@@ -8,25 +8,16 @@
   <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
   <!-- Base Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.projects_carousel',
-      children: 'a',
-      pswpModule: () => import('https://unpkg.com/photoswipe'),
-    });
-    lightbox.init();
-  </script>
+
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -54,6 +45,18 @@
       </div>
     </div>
   </nav>
+
+  <section id="page_description">
+    <div class="image">
+      <img src="https://www.ausonio.com/wp-content/uploads/pre-constuction-consulting-content.jpg" alt="">
+      <div class="title_container">
+        <h1>SERVICES</h1>
+      </div>
+    </div>
+    <div class="text">
+      <p>At Hearn & Hearn Consulting, we excel in Commercial Management, prioritizing strict budgeting and vigilant monitoring to safeguard our clients' funds. Our Project Management is innovative, breaking away from traditional approaches. For Green Building certification, we offer a unique and efficient solution addressing key sustainability concerns in the Philippines. Plus, our certified directors provide expert Contract Advisory services.</p>
+    </div>
+  </section>
 
   <section id="dna" class="services">
     <div class="container">
@@ -124,6 +127,14 @@
     </div>
   </section>
 
+  <section id="join_team">
+    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+    <div class="text">
+      <h2>Get in touch with us</h2>
+      <a href="/contact.html" class="blue_button">Contact us</a>
+    </div>
+  </section>
+  
   <footer>
     <div class="container">
       <div class="bottom_left">
@@ -154,11 +165,10 @@
         <div class="links">
           <h6>LINKS</h6>
           <a href="/"><li>HOME</li></a>
-          <a href="/about"><li>ABOUT</li></a>
-          <a href="/services"><li>SERVICES</li></a>
-          <a href="/projects"><li>PROJECTS</li></a>
-          <a href="/careers"><li>CAREERS</li></a>
-          <a href="/contact"><li>CONTACT</li></a>
+          <a href="/about.html"><li>ABOUT</li></a>
+          <a href="/services.html"><li>OUR SERVICES</li></a>
+          <a href="/projects.html"><li>OUR PROJECTS</li></a>
+          <a href="/insights.html"><li>INSIGHTS</li></a>
         </div>
       </div>
       <div class="bottom_right">
