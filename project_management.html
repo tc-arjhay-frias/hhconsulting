@@ -8,68 +8,69 @@
   <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
   <!-- Base Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.projects_carousel',
-      children: 'a',
-      pswpModule: () => import('https://unpkg.com/photoswipe'),
-    });
-    lightbox.init();
-  </script>
+
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
-      <div class="left">
-        <a href="/">
-          <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
-        </a>
-      </div>
-      <div class="right">
-        <div class="menu">
-          <a href="/">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/services.html" class="selected">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
+      <div class="top">
+        <div class="left">
+          <a href="/">
+            <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
+          </a>
         </div>
+        <div class="right">
+          <a href="/services.html" class="blue_button">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="/about.html">About us</a>
+        <a href="/services.html" data-id="services">Our Services</a>
+        <a href="/projects.html"  data-id="projects">Our Projects</a>
+        <a href="/careers.html">Careers</a>
+        <a href="/blogs.html">Blogs</a>
       </div>
     </div>
   </nav>
 
-  <section id="hero" class="block">
-    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Build for Future Image">
-    <div class="container">
-      <div class="text">
-        <h6>Turning Vision into Reality</h6>
-        <h2>Project Management</h2>
-        <p>Going beyond the traditional approach to construction and procurement, we use experience and expertise to carefully guide our clients through the process of design, tendering, construction and close out.</p>
-        <a href="/services.html" class="blue_button">Our Services</a>
-        <a href="/" class="gold_button">Contact us</a>
+  <section id="page_description">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+      <div class="title_container">
+        <h1>PROJECT MANAGEMENT</h1>
       </div>
-      <div class="logo">
-        <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo">
-      </div>
+    </div>
+    <div class="text">
+      <p>Going beyond the traditional approach to construction and procurement, we use experience and expertise to carefully guide our clients through the process of design, tendering, construction and close out.</p>
     </div>
   </section>
 
   <section class="what_do">
-    <h2>What we do?</h2>
+    <h2>WHAT DO WE DO?</h2>
+
+    <div class="buttons_container">
+      <button class="blue_button" data-id="tab1">Project & Programme Management</button>
+      <button class="blue_button" data-id="tab2">Project Troubleshooting & Rescue</button>
+      <button class="blue_button" data-id="tab3">Design Management</button>
+      <button class="blue_button" data-id="tab4">Operations & Maintenance</button>
+    </div>
+
+
     <div class="container">
-      <div class="item">
+      <div id="tab1" class="item"  style="display: flex;">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/4844/4844346.png" alt="">
         </div>
@@ -78,7 +79,7 @@
           <p>We provide comprehensive Project & Programme Management, guiding projects from start to finish, ensuring precision in planning, resource management, safety compliance, and constant client updates during all construction phases.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab2" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/10269/10269798.png" alt="">
         </div>
@@ -87,7 +88,7 @@
           <p>Initially acting as a circuit break, we cut across all aspects of the project to understand the issues. Having pinpointed failures we quickly develop a robust Project Recovery Programme and install new project controls.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab3" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/11495/11495529.png" alt="">
         </div>
@@ -96,7 +97,7 @@
           <p>The success of a construction project relies greatly on the quality of the design it is based upon. Our team drives, strategizes and streamlines the design team’s creative process to ensure the delivery of an integrated and comprehensive design that meets our Clients' project vision and goals.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab4" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/11347/11347190.png" alt="">
         </div>
@@ -147,10 +148,9 @@
           <h6>LINKS</h6>
           <a href="/"><li>HOME</li></a>
           <a href="/about.html"><li>ABOUT</li></a>
-          <a href="/services.html"><li>SERVICES</li></a>
-          <a href="/projects.html"><li>PROJECTS</li></a>
-          <a href="/careers.html"><li>CAREERS</li></a>
-          <a href="/contact.html"><li>CONTACT</li></a>
+          <a href="/services.html"><li>OUR SERVICES</li></a>
+          <a href="/projects.html"><li>OUR PROJECTS</li></a>
+          <a href="/insights.html"><li>INSIGHTS</li></a>
         </div>
       </div>
       <div class="bottom_right">
@@ -159,9 +159,14 @@
     </div>
   </footer>
 </body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-<script src="demo.js"></script>
 <!-- Base JavaScript -->
 <script src="script.js"></script>
+<script>
+  $(document).ready(() => {
+    $(".buttons_container button").click((e) => {
+      $(".container .item").css("display", "none");
+      $(`#${$(e.target).attr("data-id")}`).css("display", "flex");
+    })
+  }); 
+</script>
 </html>

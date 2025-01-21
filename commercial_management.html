@@ -4,26 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hearn & Hearn Consulting | Construction Consultancy in the Philippines</title>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hearn & Hearn Consulting | Construction Consultancy in the Philippines</title>
-  
-    <!-- Poppins Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Base Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-  
-    <!-- JQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Base Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -31,7 +25,7 @@
     <div class="container">
       <div class="top">
         <div class="left">
-          <a href="">
+          <a href="/">
             <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
           </a>
         </div>
@@ -68,15 +62,15 @@
     <h2>WHAT DO WE DO?</h2>
 
     <div class="buttons_container">
-      <button class="blue_button" id="button1">Cost & Commercial Management</button>
-      <button class="blue_button" id="button2">Insurance Valuations</button>
-      <button class="blue_button" id="button3">Construction Loan Monitoring</button>
-      <button class="blue_button" id="button4">Strategic Development Consulting</button>
-      <button class="blue_button" id="button5">Bid Consultancy</button>
+      <button class="blue_button" data-id="tab1">Cost & Commercial Management</button>
+      <button class="blue_button" data-id="tab2">Insurance Valuations</button>
+      <button class="blue_button" data-id="tab3">Construction Loan Monitoring</button>
+      <button class="blue_button" data-id="tab4">Strategic Development Consulting</button>
+      <button class="blue_button" data-id="tab5">Bid Consultancy</button>
     </div>
 
     <div class="container">
-      <div class="item" style="display: flex;">
+      <div id="tab1" class="item" style="display: flex;">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/1611/1611179.png" alt="">
         </div>
@@ -85,7 +79,7 @@
           <p>With a strong reputation for safeguarding our Clients' finances via rigorous budgeting and monitoring, we have facilitated the successful execution of the largest development projects in the Philippines, recognizing that cashflow, akin to a project's lifeblood, necessitates meticulous management and equilibrium during the construction program, offering pre-contract services such as estimating and cost planning, tender and procurement, and post-contract services like financial statements/cost control, contract administration, contractor's progress claims/progress payments, change orders/variations, and final accounts.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab2" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/1518/1518636.png" alt="">
         </div>
@@ -94,7 +88,7 @@
           <p>The Philippines is in a natural disaster prone location. Our vital annual service continues to help companies and their respective Boards understand the state of their real estate portfolios throughout the whole life cycle, identifying key risks that may lead to the repair or rebuilding of those structures. Accurate scenario planning coupled with up to date construction cost data, allows Financial Institutions, Insurance Providers, Investors and Developers to determine if they are under insured, make the necessary changes to their premiums and avoid abrogation.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab3" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/857/857779.png" alt="">
         </div>
@@ -103,7 +97,7 @@
           <p>We help Financial Institutions and Private Investors understand the potential exposure of their loans on commercial real estate or land development. Strict monitoring of claimed or stated progress or purchase of materials, against that on site allows the early detection of potential risks to a loan.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab4" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/11347/11347190.png" alt="">
         </div>
@@ -112,7 +106,7 @@
           <p>Turning our Clients' vision into a cohesive strategic brief, detailing the key elements to delivering a successful project. Maximising the value achieved from the capital investment through embedding best practices through a clear Project Execution Plan.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab5" class="item">
         <div class="image">
           <img src="https://cdn-icons-png.flaticon.com/512/2162/2162213.png" alt="">
         </div>
@@ -176,5 +170,12 @@
 </body>
 <!-- Base JavaScript -->
 <script src="script.js"></script>
-
+<script>
+  $(document).ready(() => {
+    $(".buttons_container button").click((e) => {
+      $(".container .item").css("display", "none");
+      $(`#${$(e.target).attr("data-id")}`).css("display", "flex");
+    })
+  }); 
+</script>
 </html>

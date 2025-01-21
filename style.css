@@ -957,9 +957,7 @@ footer {
     font-weight: 600;
     color: var(--color-blue);
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--color-gold);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .what_do > .container {
     max-width: 1400px;
@@ -973,11 +971,8 @@ footer {
     .what_do > .container > .item {
       border-radius: 10px;
       padding: 40px 20px;
-      background-color: var(--color-lightgray);
+      /* background-color: var(--color-lightgray); */
       display: none;
-      /* background: #e0e0e0;
-      box-shadow:  20px 20px 60px #bebebe,
-      -20px -20px 60px #ffffff; */
       align-items: center;
       color: var(--color-blue);
       margin-bottom: 40px;
@@ -1011,7 +1006,7 @@ footer {
     margin-bottom: 40px;
     max-width: 1400px;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
   }
     .what_do .buttons_container > button {
       border: none;
@@ -1041,7 +1036,7 @@ footer {
   }
   #page_description > .image > img {
     width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
     filter: brightness(0.4);
     display: block;
