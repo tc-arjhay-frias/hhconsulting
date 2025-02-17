@@ -8,68 +8,68 @@
   <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
   <!-- Base Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.projects_carousel',
-      children: 'a',
-      pswpModule: () => import('https://unpkg.com/photoswipe'),
-    });
-    lightbox.init();
-  </script>
+
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
-      <div class="left">
-        <a href="/">
-          <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
-        </a>
-      </div>
-      <div class="right">
-        <div class="menu">
-          <a href="/">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/services.html" class="selected">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
+      <div class="top">
+        <div class="left">
+          <a href="/">
+            <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
+          </a>
         </div>
+        <div class="right">
+          <a href="/services.html" class="blue_button">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="container">
+        <a href="/">Home</a>
+        <a href="/about.html">About us</a>
+        <a href="/services.html" data-id="services">Our Services</a>
+        <a href="/projects.html"  data-id="projects">Our Projects</a>
+        <a href="/careers.html">Careers</a>
+        <a href="/blogs.html">Blogs</a>
       </div>
     </div>
   </nav>
 
-  <section id="hero" class="block">
-    <img src="https://images.unsplash.com/photo-1535689077097-a8726b5ff822?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Build for Future Image">
-    <div class="container">
-      <div class="text">
-        <h6>Redefining Green Building Certification in the Philippines</h6>
-        <h2>Green Building</h2>
-        <p>A unique and efficient take on green Building certification which addresses key sustainable concerns in the Philippines while harnessing benefits of the most prominent green building certifications.</p>
-        <a href="/services.html" class="blue_button">Our Services</a>
-        <a href="/" class="gold_button">Contact us</a>
+  <section id="page_description">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+      <div class="title_container">
+        <h1>GREEN BUILDING</h1>
       </div>
-      <div class="logo">
-        <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo">
-      </div>
+    </div>
+    <div class="text">
+      <p>A unique and efficient take on green Building certification which addresses key sustainable concerns in the Philippines while harnessing benefits of the most prominent green building certifications.</p>
     </div>
   </section>
 
   <section class="what_do">
-    <h2>What we do?</h2>
+    <h2>WHAT DO WE DO?</h2>
+
+    <div class="buttons_container">
+      <button class="blue_button" data-id="tab1">LEED Certification</button>
+      <button class="blue_button" data-id="tab2">WELL Certification</button>
+      <button class="blue_button" data-id="tab3">BERDE Certification</button>
+    </div>
+
+
     <div class="container">
-      <div class="item">
+      <div id="tab1" class="item"  style="display: flex;">
         <div class="image">
           <img style="filter: none; height: 250px" src="https://static.wixstatic.com/media/7e3536_2bbb93792d8f4167a2f09405f8b76d00~mv2.png/v1/fill/w_300,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_Green%20Building.png" alt="">
         </div>
@@ -78,7 +78,7 @@
           <p>LEED is the most widely used score-based rating system in the world. it focuses on providing a perspective framework for high performing new and existing buildings. LEED certified office buildings, on average consume 23% less electricity and 24% less water when compared to conventional office buildings which translates to an annual operating-cost reduction.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab2" class="item">
         <div class="image">
           <img style="filter: none; height: 250px" src="https://static.wixstatic.com/media/7e3536_1c271c8d05c542218cec857bcc3f24ff~mv2.png/v1/fill/w_300,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_Green%20Building2.png" alt="">
         </div>
@@ -87,7 +87,7 @@
           <p>WELL is the world's first evidence based rating system designed for measuring, certifying and monitoring building features that impact the building occupant's health and wellbeing. It's recent iteration - WELL version 2, launched last September 2020 signifies the rapid growth of the tool and a recognition of its utility in creating healthy indoor spaces especially during the COVID-19 pandemic.</p>
         </div>
       </div>
-      <div class="item">
+      <div id="tab3" class="item">
         <div class="image">
           <img style="filter: none; height: 250px" src="https://static.wixstatic.com/media/7e3536_108bbd8d7c034dd088c227ad474db0f5~mv2.png/v1/fill/w_300,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_Green%20Building3.png" alt="">
         </div>
@@ -138,10 +138,9 @@
           <h6>LINKS</h6>
           <a href="/"><li>HOME</li></a>
           <a href="/about.html"><li>ABOUT</li></a>
-          <a href="/services.html"><li>SERVICES</li></a>
-          <a href="/projects.html"><li>PROJECTS</li></a>
-          <a href="/careers.html"><li>CAREERS</li></a>
-          <a href="/contact.html"><li>CONTACT</li></a>
+          <a href="/services.html"><li>OUR SERVICES</li></a>
+          <a href="/projects.html"><li>OUR PROJECTS</li></a>
+          <a href="/insights.html"><li>INSIGHTS</li></a>
         </div>
       </div>
       <div class="bottom_right">
@@ -150,9 +149,14 @@
     </div>
   </footer>
 </body>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-<script src="demo.js"></script>
 <!-- Base JavaScript -->
 <script src="script.js"></script>
+<script>
+  $(document).ready(() => {
+    $(".buttons_container button").click((e) => {
+      $(".container .item").css("display", "none");
+      $(`#${$(e.target).attr("data-id")}`).css("display", "flex");
+    })
+  }); 
+</script>
 </html>
