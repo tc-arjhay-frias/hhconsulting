@@ -8,33 +8,24 @@
   <!-- Poppins Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
   <!-- Base Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="module">
-    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '.projects_carousel',
-      children: 'a',
-      pswpModule: () => import('https://unpkg.com/photoswipe'),
-    });
-    lightbox.init();
-  </script>
+
 </head>
 <body>
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
   <nav>
     <div class="container">
       <div class="top">
         <div class="left">
-          <a href="">
+          <a href="/">
             <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo" />
           </a>
         </div>
@@ -47,30 +38,27 @@
       <div class="container">
         <a href="/">Home</a>
         <a href="/about.html">About us</a>
-        <a href="/services" data-id="services">Our Services</a>
+        <a href="/services.html" data-id="services">Our Services</a>
         <a href="/projects.html"  data-id="projects">Our Projects</a>
-        <a href="/careers">Careers</a>
-        <a href="/blogs">Blogs</a>
+        <a href="/careers.html">Careers</a>
+        <a href="/blogs.html">Blogs</a>
       </div>
     </div>
   </nav>
 
-  <section id="hero" class="block">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Build for Future Image">
-    <div class="container">
-      <div class="text">
-        <!-- <h6>A Team of Innovation Dazzlers</h6> -->
-        <h2>About us</h2>
-        <p>Hearn & Hearn Consulting is an innovative consulting practice providing advice and services on a wide range of activities relating to the construction and development of projects. With over 40 years experience with large and prestigious development projects in the Philippines, Hearn & Hearn Consulting has a wealth of experience to assist clients with their development portfolio.</p>
-        <a href="/" class="blue_button">Our Services</a>
-        <a href="/" class="gold_button">Contact us</a>
+  <section id="page_description">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
+      <div class="title_container">
+        <h1>ABOUT US</h1>
       </div>
-      <div class="logo">
-        <img src="hh_logo.webp" alt="Hearn & Hearn Consulting Logo">
-      </div>
+    </div>
+    <div class="text">
+      <p>Hearn & Hearn Consulting is an innovative consulting practice providing advice and services on a wide range of activities relating to the construction and development of projects. With over 40 years experience with large and prestigious development projects in the Philippines, Hearn & Hearn Consulting has a wealth of experience to assist clients with their development portfolio.</p>
     </div>
   </section>
 
+  
   <section id="partners">
     <h2>A Proud Members and Affiliates of these Organizations</h2>
     <div class="container">
@@ -109,28 +97,28 @@
       <div class="leaders">
         <div class="card">
           <div class="image_container">
-            <img src="https://static.wixstatic.com/media/7e3536_39f0ad1984ec4066b578022d04186741~mv2.png/v1/fill/w_379,h_379,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_The%20Team.png" alt="" class="image1">
-            <img src="https://philstarlife.s3.ap-east-1.amazonaws.com/photos/Brooke/2023/March/Michael%20Hearn%200.jpeg" alt="" class="image2">
+            <!-- <img src="https://static.wixstatic.com/media/7e3536_39f0ad1984ec4066b578022d04186741~mv2.png/v1/fill/w_379,h_379,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1080x1080_The%20Team.png" alt="" class="image1"> -->
+            <img src="https://philstarlife.s3.ap-east-1.amazonaws.com/photos/Brooke/2023/March/Michael%20Hearn%200.jpeg" alt="" class="image1">
           </div>
           <div class="text">
             <h4>MICHAEL HEARN</h4>
             <h6>Executive Director</h6>
-            <p>"Our results focused approach provides confidence to Clients. We are the first to raise our hand when it comes to unique challenges or taking on projects that have drifted. Highly strategic, organised and qualified teams are the key to our ability to deliver results."</p>
+            <p><span style="font-size:26px; font-weight: bold">"</span>Our results focused approach provides confidence to Clients. We are the first to raise our hand when it comes to unique challenges or taking on projects that have drifted. Highly strategic, organised and qualified teams are the key to our ability to deliver results.<span style="font-size:26px; font-weight: bold">"</span></p>
           </div>
         </div>
         <div class="card">
           <div class="image_container">
-            <img src="https://static.wixstatic.com/media/7e3536_91a18ee0784e43e791ce451aba1a6215~mv2.png/v1/fill/w_379,h_379,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7e3536_91a18ee0784e43e791ce451aba1a6215~mv2.png" alt="" class="image1">
-            <img src="https://media.licdn.com/dms/image/C4E03AQES493mKJWdFQ/profile-displayphoto-shrink_400_400/0/1541399250199?e=1695859200&v=beta&t=mPMGENdw3fLP-xl6u5fYmT8VG7d_3TijNh-W_3KfudE" alt="" class="image2">
+            <!-- <img src="https://static.wixstatic.com/media/7e3536_91a18ee0784e43e791ce451aba1a6215~mv2.png/v1/fill/w_379,h_379,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7e3536_91a18ee0784e43e791ce451aba1a6215~mv2.png" alt="" class="image1"> -->
+            <img src="https://media.licdn.com/dms/image/v2/C4E03AQES493mKJWdFQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1541399251979?e=2147483647&v=beta&t=c3kgahePMFkXAqpPQrQKcAYwGJ_N5TMjBU61nmTbiyw" alt="" class="image1">
           </div>
           <div class="text">
             <h4>ALAN HEARN</h4>
             <h6>Managing Director</h6>
-            <p>"We have particular skill in clarifying complex corporate strategies. With our experience and dynamic team of experts we have proven success in delivering across the UK and Asian Markets."</p>
+            <p><span style="font-size:26px; font-weight: bold">"</span>We have particular skill in clarifying complex corporate strategies. With our experience and dynamic team of experts we have proven success in delivering across the UK and Asian Markets.<span style="font-size:26px; font-weight: bold">"</span></p>
           </div>
         </div>
       </div>
-      <div class="members">
+      <!-- <div class="members">
         <div class="card">
           <div class="image_container">
             <img src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2023-07/230724-elon-musk-ac-1041p-bc05fb.jpg" alt="" class="image1">
@@ -263,15 +251,16 @@
             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. pariatur dignissimos."</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
+
   <section id="join_team">
-    <img src="https://www.amazingborneo.com/uploads/images/packages/341/medium/3d_group_photo_teambuilding_corporate_kota_kinabalu_amazing_borneo_tours.jpg" alt="">
+    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="">
     <div class="text">
-      <h2>Become a part of our Amazing Team</h2>
-      <a href="/careers" class="blue_button">View Open Positions</a>
+      <h2>Get in touch with us</h2>
+      <a href="/contact.html" class="blue_button">Contact us</a>
     </div>
   </section>
 
@@ -296,7 +285,7 @@
       </div>
       <div class="top_left">
         <h6>GET IN TOUCH</h6>
-        <p>4th Floor, Kings' Court 1, <br>2129 Chino Roces Avenue, <br>Makati City, 1230, <br>Philippines.</p>
+        <p>6th Floor, Kings' Court 1, <br>2129 Chino Roces Avenue, <br>Makati City, 1230, <br>Philippines.</p>
 
         <a href="tel:+639156704357">+63 915 670 4357</a>
         <a href="mailto:theteam@hhconsulting.com.ph">theteam@hhconsulting.com.ph</a>
@@ -306,10 +295,9 @@
           <h6>LINKS</h6>
           <a href="/"><li>HOME</li></a>
           <a href="/about.html"><li>ABOUT</li></a>
-          <a href="/services.html"><li>SERVICES</li></a>
-          <a href="/projects.html"><li>PROJECTS</li></a>
-          <a href="/careers.html"><li>CAREERS</li></a>
-          <a href="/contact.html"><li>CONTACT</li></a>
+          <a href="/services.html"><li>OUR SERVICES</li></a>
+          <a href="/projects.html"><li>OUR PROJECTS</li></a>
+          <a href="/insights.html"><li>INSIGHTS</li></a>
         </div>
       </div>
       <div class="bottom_right">
@@ -318,5 +306,14 @@
     </div>
   </footer>
 </body>
+<!-- Base JavaScript -->
 <script src="script.js"></script>
+<script>
+  $(document).ready(() => {
+    $(".buttons_container button").click((e) => {
+      $(".container .item").css("display", "none");
+      $(`#${$(e.target).attr("data-id")}`).css("display", "flex");
+    })
+  }); 
+</script>
 </html>
